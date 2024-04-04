@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="833.0" prefWidth="1174.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.parcialads3.MenuController">
+   <children>
+      <ListView fx:id="nominaListView" layoutX="351.0" layoutY="149.0" prefHeight="291.0" prefWidth="472.0" />
+      <Label layoutX="431.0" layoutY="47.0" text="MENU NOMINA">
+         <font>
+            <Font name="Bodoni MT Black" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="491.0" prefHeight="21.0" prefWidth="162.0" text="Nombre Asignatura:" />
+      <Label layoutX="72.0" layoutY="537.0" text="Horas de la Asignatura : " />
+      <TextField fx:id="NombreAsig" layoutX="234.0" layoutY="486.0" />
+      <TextField fx:id="HorasAsig" layoutX="234.0" layoutY="532.0" />
+      <Button fx:id="AgregarAsignaturas" layoutX="72.0" layoutY="589.0" mnemonicParsing="false" onAction="#handleAgregarAsignaturasButton" text="Agregar Asignatura" />
+      <Label layoutX="504.0" layoutY="494.0" prefHeight="21.0" prefWidth="131.0" text="Salario:" />
+      <Label fx:id="Salario" layoutX="635.0" layoutY="494.0" />
+      <Button fx:id="CalcularSalario" layoutX="504.0" layoutY="532.0" mnemonicParsing="false" onAction="#handleCalcularSalarioButton" text="Calcular Salario" />
+      <Label layoutX="788.0" layoutY="491.0" text="Nombre Empleado" />
+      <TextField fx:id="NombreEmpleado" layoutX="929.0" layoutY="486.0" />
+      <Button fx:id="CalcularSalrioXNombre" layoutX="788.0" layoutY="589.0" mnemonicParsing="false" onAction="#handleCalcularSalarioXNombreButton" text="Calcular Salario " />
+      <Label fx:id="Salario1" layoutX="929.0" layoutY="537.0" prefHeight="21.0" prefWidth="89.0" />
+      <Label layoutX="798.0" layoutY="537.0" prefHeight="21.0" prefWidth="131.0" text="Salario:" />
+      <Button fx:id="GenerarReporte" layoutX="504.0" layoutY="589.0" mnemonicParsing="false" onAction="#handleGenerarReporteButton" text="Generar Reporte" />
+      <Button fx:id="salirButton" layoutX="545.0" layoutY="788.0" mnemonicParsing="false" text="Salir" onAction="#handleSalirButton" />
+      <TableView fx:id="reporteTableView" layoutX="351.0" layoutY="633.0" prefHeight="145.0" prefWidth="472.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nombreColumn" prefWidth="266.0" text="Nombre" />
+            <TableColumn fx:id="salarioColumn" prefWidth="130.0" text="Salario" />
+        </columns>
+      </TableView>
+
+   </children>
+</AnchorPane>
