@@ -30,6 +30,7 @@ public class HelloController {
         stage.setTitle("LOGIN");
         stage.show();
     }
+    
     @FXML
     private void onRegisterButtonClick(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Registrer.fxml"));
