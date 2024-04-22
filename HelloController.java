@@ -13,6 +13,7 @@ import java.io.IOException;
 public class HelloController {
 
     @FXML
+    //hola
     private void onLoginButtonClick(ActionEvent event) throws IOException {
         // Cargar la nueva pantalla (LoginScreen.fxml)
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
